@@ -9,7 +9,7 @@ var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-app.listen(3000, function() {
+app.listen(17310, function() {
   console.log("Brevity Api data is available");
 })
 
