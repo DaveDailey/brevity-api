@@ -1,7 +1,7 @@
 var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-Parser');
-var db = mongoose.connect('mongodb://localhost/brevitydata');
+var db = mongoose.connect('mongodb://heroku_qjqm3dmt:4rb535kpbhkk6vc9ri60n3gahg@ds217310.mlab.com:17310/heroku_qjqm3dmt');
 
 var Term = require('./model/term');
 
@@ -31,5 +31,5 @@ app.get('/term', function(req,res){
     } else {
       res.send(terms);
     }
-  });  
+  });
 });
